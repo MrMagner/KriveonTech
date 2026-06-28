@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/sections/HeroSection";
-import { SocialProofSection } from "@/components/sections/SocialProofSection";
+// import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { ServicesBento } from "@/components/sections/ServicesBento";
 import { DeliverablesSection } from "@/components/sections/DeliverablesSection";
 import { ProcessTeaser } from "@/components/sections/ProcessTeaser";
