@@ -9,15 +9,15 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 lg:pt-48 lg:pb-32 perspective-[1000px]">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:48px_48px] [transform:rotateX(60deg)_translateY(-100px)_scale(2)] transform-origin-top opacity-30"></div>
-      
+
       {/* Floating 3D Orbs */}
-      <motion.div 
-        animate={{ y: [0, -20, 0], x: [0, 10, 0] }} 
+      <motion.div
+        animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px] -z-10"
       />
-      <motion.div 
-        animate={{ y: [0, 30, 0], x: [0, -15, 0] }} 
+      <motion.div
+        animate={{ y: [0, 30, 0], x: [0, -15, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[120px] -z-10"
       />
@@ -35,9 +35,9 @@ export function HeroSection() {
               Real-World Engineering Solutions
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
-            Production-quality implementations for academics, researchers, and innovators. 
+            Freelance engineers group helps in production-quality implementations for academics, researchers, and innovators.
             We build the architecture so you can focus on the breakthrough.
           </p>
 
