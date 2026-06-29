@@ -3,9 +3,10 @@
 import { useRef } from "react";
 import { Code2, Cpu, GraduationCap, Network } from "lucide-react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { Scene } from "./Scene";
+import { motion, type Variants } from "framer-motion";
 
 /* ────────────────────────────────────────────
    Data
@@ -43,16 +44,16 @@ const services = [
 /* ────────────────────────────────────────────
    Animation Variants
    ──────────────────────────────────────────── */
-const headerVariants = {
+const headerVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
   }
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: (direction: string) => ({
     opacity: 0,
     scale: 0.8,
@@ -98,7 +99,7 @@ export function ServicesBento() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {/* ── Header ── */}
-        <motion.div 
+        <motion.div
           className="text-center mb-24"
           variants={headerVariants}
           initial="hidden"
@@ -135,8 +136,8 @@ export function ServicesBento() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-20%" }}
-                whileHover={{ 
-                  y: -8, 
+                whileHover={{
+                  y: -8,
                   scale: 1.02,
                   transition: { type: "spring", stiffness: 300, damping: 20 }
                 }}
@@ -153,7 +154,7 @@ export function ServicesBento() {
 
                 {/* Inner Glow on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
-                   <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
                 </div>
 
                 <div className="relative z-10 p-8 md:p-10 flex flex-col justify-between h-full">
