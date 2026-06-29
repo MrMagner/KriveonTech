@@ -41,9 +41,10 @@ export function DeliverablesSection() {
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               We don't just deliver a compiled binary or an encrypted ZIP file. We operate with complete transparency, providing you with everything necessary to understand, scale, and defend your project.
             </p>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <p className="text-sm font-mono text-primary mb-2"># Strict Policy</p>
-              <p className="text-foreground font-medium">
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 shadow-lg relative overflow-hidden mt-8">
+              <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+              <p className="text-lg md:text-2xl font-mono text-primary mb-3 font-extrabold tracking-tight"># IMPORTANT NOTE</p>
+              <p className="text-foreground text-lg md:text-xl font-medium leading-relaxed">
                 "Project Reports and Documentation are NOT included unless explicitly stated. We are engineers, not technical writers."
               </p>
             </div>
